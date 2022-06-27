@@ -1,0 +1,3 @@
+[submodule "upstream/fluidd-core_fluidd"]
+	path = upstream/fluidd-core_fluidd
+	url = https://github.com/fluidd-core/fluidd

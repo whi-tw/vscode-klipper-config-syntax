@@ -1,17 +1,17 @@
 {
-    "name": "klipper-config",
-    "displayName": "Klipper Config",
+    "name": "klipper-config-syntax",
+    "displayName": "Klipper Config Syntax Highlighting",
     "description": "Syntax highlighting for Klipper config files",
     "version": "0.1.6",
-    "publisher": "aeresov",
+    "publisher": "whi-tw",
     "license": "read LICENSE file",
     "engines": {
         "vscode": "^1.44.0"
     },
-    "homepage": "https://github.com/aeresov/klipper-config-syntax/blob/master/README.md",
+    "homepage": "https://github.com/whi-tw/klipper-config-syntax/blob/master/README.md",
     "repository": {
         "type": "git",
-        "url": "https://github.com/aeresov/vscode-klipper-config-syntax.git"
+        "url": "https://github.com/whi-tw/vscode-klipper-config-syntax.git"
     },
     "icon": "images/klipper-logo.png",
     "categories": [

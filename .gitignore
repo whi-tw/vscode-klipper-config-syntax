@@ -1,1 +1,3 @@
 /*.vsix
+examples/.vscode
+syntaxes/klipper-config.tmLanguage.json
