@@ -2,7 +2,7 @@
     "name": "klipper-config-syntax",
     "displayName": "Klipper Config Syntax Highlighting",
     "description": "Syntax highlighting for Klipper config files",
-    "version": "0.1.6",
+    "version": "0.1.7",
     "publisher": "whi-tw",
     "license": "read LICENSE file",
     "engines": {
