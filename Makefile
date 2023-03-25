@@ -1,15 +1,20 @@
-.PHONY: publish clean
-
+CURRENT_VERSION = $(shell jq -r .version package.json)
+.PHONY: default
 default: publish clean
 
 syntaxes/klipper-config.tmLanguage.json: upstream/fluidd-core_fluidd/src/monaco/language/klipper-config.tmLanguage.json
 	cp $< $@
 
-package: syntaxes/klipper-config.tmLanguage.json
-	vsce package
+.PHONY: package
+package: klipper-config-syntax-$(CURRENT_VERSION).vsix
 
+klipper-config-syntax-$(CURRENT_VERSION).vsix: syntaxes/klipper-config.tmLanguage.json
+	yarn package
+
+.PHONY: publish
 publish: package
-	vsce publish patch
+	yarn publish
 
+.PHONY: clean
 clean:
 	rm *.vsix
