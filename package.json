@@ -43,7 +43,7 @@
         "@vscode/vsce": "^2.18.0"
     },
     "scripts": {
-        "package": "vsce package",
-        "publish": "vsce publish"
+        "vsce:package": "vsce package",
+        "vsce:publish": "vsce publish"
     }
 }

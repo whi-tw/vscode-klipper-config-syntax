@@ -9,11 +9,11 @@ syntaxes/klipper-config.tmLanguage.json: upstream/fluidd-core_fluidd/src/monaco/
 package: klipper-config-syntax-$(CURRENT_VERSION).vsix
 
 klipper-config-syntax-$(CURRENT_VERSION).vsix: syntaxes/klipper-config.tmLanguage.json
-	yarn package
+	yarn vsce:package
 
 .PHONY: publish
 publish: package
-	yarn publish
+	yarn vsce:publish
 
 .PHONY: clean
 clean:
